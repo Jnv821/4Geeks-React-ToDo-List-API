@@ -10,3 +10,58 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body{
+    background-color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.202));
+}
+
+p {
+    display: inline;
+    word-break: break-word;
+    width: 20%;
+}
+
+input{
+    border: none;
+    padding: 15px 25px;
+    z-index: 1;
+}
+
+input:focus{
+    outline: none;
+}
+
+li {
+    padding: 20px 25px;
+    background-color: white;
+    border-top: 1px solid rgb(50,50,50, 0.2);
+    font-weight: 200;
+}
+
+.icon {
+    display: inline-block;
+    font-weight: 200;
+    color: red;
+    opacity: 0%;
+}
+
+li:hover .icon {
+    animation: Xin 0.5s ease  forwards;
+}
+
+@keyframes Xin {
+    from{
+        transform: rotateZ(0deg);
+        opacity: 0%;
+    }
+    to {
+        transform: rotateZ(180deg);
+        opacity: 100%;
+    }
+}
