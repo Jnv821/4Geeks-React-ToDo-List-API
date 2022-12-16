@@ -7,6 +7,7 @@ function Tasklist(props) {
     return (
         <ul>
             <Task todos={props.todos} deleteToDo={props.deleteToDo} />
+            <li>{props.todos.length} tasks to complete</li>
         </ul>
     );
 }

@@ -54,6 +54,10 @@ li {
 li:hover .icon {
     animation: Xin 0.5s ease  forwards;
 }
+li:last-child{
+    font-size: 14px;
+    color: rgb(50,50,50, 0.5)
+}
 
 @keyframes Xin {
     from{
